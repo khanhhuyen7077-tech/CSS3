@@ -1,36 +1,95 @@
+/* ===== Body ===== */
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    margin: 0;
 }
 
+/* ===== Skip link (accessibility) ===== */
+a.skip{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: black;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+a.skip:focus{
+    top: 0;
+}
+
+/* ===== Header ===== */
 header{
     background-color: #d9d9d9;
+    padding: 10px;
 }
 
+/* ===== Nav ===== */
 nav{
+    display: inline-block;
+    width: 80%;
     background-color: #bfbfbf;
+    padding: 10px;
 }
 
+/* Nav images */
+nav img{
+    width: 10%;
+}
+
+/* ===== Main ===== */
 main{
     background-color: #f2f2f2;
     font-size: 20px;
+    padding: 20px;
 }
 
+/* ===== Footer ===== */
 footer{
     background-color: #d9d9d9;
+    text-align: center;
+    padding: 10px;
 }
 
+/* ===== DISABLED li (theo yêu cầu) ===== */
+/*
 li{
     display: inline-block;
     width: 150px;
 }
+*/
 
+/* ===== Headings ===== */
 h1{
     text-align: center;
     font-family: Georgia, serif;
     color: #003366;
 }
 
+/* ===== Paragraph ===== */
 p{
     line-height: 1.6;
+}
+
+/* ===== GRID ===== */
+.grid{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 30px;
+}
+
+/* Grid images */
+.grid img{
+    width: 100%;
+}
+
+/* ===== FLEX ===== */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
